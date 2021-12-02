@@ -1,0 +1,12 @@
+<ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/events">Events</a></li>
+    <li><a href="/contact">Contact us</a></li>
+    <% console.log(loggedIn) %>
+    <% if(loggedIn) { %>
+        <li style="float:right"><a class="active" href="/logout" id="logg"><%- title %></a></li>
+   <% } else { %>
+        <li style="float:right"><a class="active" href="/login" id="logg">Login</a></li>
+   <% } %>
+
+</ul>
